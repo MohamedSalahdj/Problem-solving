@@ -26,3 +26,9 @@ def century(year):
 def century(year):
    
     return 1 if year in range(1, 101)  else year/100 if year%100 == 0 else int(year/100)+1  
+
+# Third solution with Ternary Operators better than second 
+
+def century(year):
+    
+    return year / 100 if year%100 ==0 else int(year / 100) + 1
