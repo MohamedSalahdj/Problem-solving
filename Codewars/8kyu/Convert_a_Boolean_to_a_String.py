@@ -13,3 +13,7 @@ def boolean_to_string(b):
 # Second solution 
 def boolean_to_string(b):
     return "True" if b else "False"
+
+#Third Solution 
+def boolean_to_string(b):
+    return f"{b}"
