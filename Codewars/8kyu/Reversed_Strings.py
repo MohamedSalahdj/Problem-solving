@@ -4,19 +4,30 @@
         'word'   =>  'drow'
 """
 # first solution 
-# def solution(string):
-#     l = [letter for letter in string]
-#     l.reverse()
-#     return ''.join(l)
+def solution(string):
+    l = [letter for letter in string]
+    l.reverse()
+    return ''.join(l)
 
-#second Solution 
 
+
+# second Solution 
 def solution(string):
     i = len(string) - 1
     new_string = ''
     for _ in range(len(string)):
-        new_string+= string [i]
+        new_string+= string[i]
         i-=1
     return new_string
 
+print(solution('world'))
+
+#third solution  with while loop 
+def solution(string):
+    i = len(string) - 1
+    new_string = ''
+    while i >=0 :
+        new_string+= string[i]
+        i-=1
+    return new_string
 print(solution('world'))
