@@ -29,3 +29,7 @@ def quarter_of(month):
     elif month/3 > 2 and month/3  <=3 :
         return 3
     return 4
+
+#Third Solution 
+def quarter_of(month):
+    return 1 if month < 4 else 2 if month < 7 else 3 if month < 10 else 4
