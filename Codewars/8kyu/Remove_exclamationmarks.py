@@ -9,3 +9,7 @@ def remove_exclamation_marks(s):
             new_string+=letter
     return new_string
 
+#second solution ---> with replace method 
+def remove_exclamation_marks(s):
+    return s.replace('!','')
+
