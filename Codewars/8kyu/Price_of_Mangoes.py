@@ -9,6 +9,7 @@ mango(5, 3) ==> 12   # 4 mangoes for $3 per unit = $12; +1 mango for free
 mango(9, 5) ==> 30   # 6 mangoes for $5 per unit = $30; +3 mangoes for free
 
 """
+#first solution 
 def mango(quantity, price):
     if quantity < 3 : 
         return quantity * price
@@ -16,6 +17,6 @@ def mango(quantity, price):
         remain = quantity - int((quantity / 3))
         return remain * price
 
-print(mango(3, 3))
-print(mango(9, 5))
-print(mango(5, 3) )
+#Second solution 
+def mango(quantity, price):
+    return (quantity - int(quantity / 3)) * price
