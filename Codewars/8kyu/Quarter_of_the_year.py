@@ -19,3 +19,13 @@ def quarter_of(month):
     elif month in range(7,10):
         return 3
     return 4
+
+#second solution 
+def quarter_of(month):
+    if month/3 <=1:
+        return 1
+    elif month/3 > 1 and  month/3 <= 2 :
+        return 2
+    elif month/3 > 2 and month/3  <=3 :
+        return 3
+    return 4
