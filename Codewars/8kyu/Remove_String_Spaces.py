@@ -15,3 +15,11 @@ Input -> Output
 def no_space(x):
     l = x.split()
     return "".join(l)
+
+#second slution 
+def no_space(x):
+    string_without_space = ''
+    for letter in x:
+        if letter !=' ':
+            string_without_space += letter
+    return string_without_space
