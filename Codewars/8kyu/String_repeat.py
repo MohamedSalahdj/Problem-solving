@@ -11,3 +11,12 @@ Examples (input -> output)
 #first solution 
 def repeat_str(repeat, string):
     return string * repeat 
+
+#second solution 
+def repeat_str(repeat, string):
+    string_with_repeat = '' 
+    while repeat > 0:
+        string_with_repeat+= string
+        repeat-= 1
+    return string_with_repeat
+
