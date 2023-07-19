@@ -29,3 +29,8 @@ def count_sheeps(sheep):
             number_of_true+=1
     return number_of_true
 
+#Third Solution  with list comprehension
+
+def count_sheeps(sheep):
+    number_of_true = [ 1  for i in sheep if i]
+    return len(number_of_true)
