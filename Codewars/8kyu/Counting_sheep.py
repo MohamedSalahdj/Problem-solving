@@ -11,6 +11,7 @@ For example,
   True,  True,  True,  True ,
   False, False, True,  True]
 """
+
 #First Solution 
 def count_sheeps(sheep):
     sum_of_sheep = 0
@@ -18,3 +19,13 @@ def count_sheeps(sheep):
         if i == True:
             sum_of_sheep+=1
     return sum_of_sheep
+
+
+#second Solution 
+def count_sheeps(sheep):
+    number_of_true = 0
+    for i in sheep:
+        if i:
+            number_of_true+=1
+    return number_of_true
+
