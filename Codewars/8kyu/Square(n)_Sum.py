@@ -11,4 +11,7 @@ def square_sum(numbers):
         sum_of_number+= number*number
     return sum_of_number
 
-
+#Second Solution with list comprehension 
+def square_sum(numbers):
+    sum_of_square_number  = [ number*number for number in numbers ]
+    return sum(sum_of_square_number)
