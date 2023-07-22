@@ -24,3 +24,8 @@ def correct(s):
         elif letter == '1': string_correct+= 'I'
     return string_correct
         
+# Second Solution 
+def correct(s):
+    new_string = s.replace('0','O').replace('5','S').replace('1','I')
+    return new_string
+
