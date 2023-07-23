@@ -29,3 +29,19 @@ def correct(s):
     new_string = s.replace('0','O').replace('5','S').replace('1','I')
     return new_string
 
+#third-solution 
+def correct(s):
+    list_of_char = list(s)    
+    i = 0
+    while i < len(list_of_char):
+        if list_of_char[i] == '5':
+            list_of_char[i] = 'S'
+        elif list_of_char[i] == '0':
+            list_of_char[i]='O'
+        elif list_of_char[i] == '1':
+            list_of_char[i] = 'I'
+        i+=1
+    return ''.join(list_of_char)
+
+
+
