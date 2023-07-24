@@ -11,3 +11,11 @@ Return true if the array contains the value, false if not.
 # First Solution 
 def check(seq, elem):
     return elem in seq
+
+# Second Solution 
+
+
+def check(seq, elem):
+    for item in seq:
+        if item == elem : return True
+    return False
