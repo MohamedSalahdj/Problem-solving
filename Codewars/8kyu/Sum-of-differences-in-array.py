@@ -17,3 +17,12 @@ def sum_of_differences(arr):
     arr.sort(reverse = True)
     differences_of_elements = [arr[i] - arr[i+1] for i in range(0,len(arr)-1)]
     return sum(differences_of_elements)
+
+
+# Second - Solution
+def sum_of_differences(arr):
+    if len(arr) <= 1 :
+        return 0
+    arr.sort(reverse = True)
+    differences_of_elements = [arr[i] - arr[i+1] for i in range(0,len(arr)-1)]
+    return sum(differences_of_elements)
