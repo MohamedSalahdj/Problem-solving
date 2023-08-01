@@ -10,14 +10,19 @@ Example: (Input1, Input2 -->Output)
 "2", "" --> "2"
 "-5", "3" --> "-2"
 """
-# fisrt solution 
+##first-solution 
 def sum_str(a, b):
-    if a == '' and b == '' : 
+    if a == '' and b == '': 
         a,b = 0,0
     elif a == '' : 
         a = 0
     elif b == '' : 
-        b= 0
+        b = 0
     return str(int(a) + int(b))
 
 print(sum_str('', ''))
+
+
+#second solution 
+def sum_str(a, b):
+    return str(int(a) + int(b)) if a and b else a or b or '0'
