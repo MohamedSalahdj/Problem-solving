@@ -18,3 +18,15 @@ def count_by(x, n):
     return [ i for i in range(x,(x*n)+1, x)]
 
 
+
+#second-solution 
+def count_by(x, n):
+    l = []
+    i = x
+    j = 0
+    for _ in range(n):
+        l.append(i+j)  
+        j=i+j 
+    return l
+
+
