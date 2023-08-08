@@ -11,8 +11,12 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 
 #first-solution 
 def find_smallest_int(arr):
-    min = arr[0]
+    min_integer = arr[0]
     for integer in arr:
-        if integer < min :
-            min = integer
-    return min
+        if integer < min_integer :
+            min_integer = integer
+    return min_integer
+
+#second-solution 
+def find_smallest_int(arr):
+    return min(arr)
