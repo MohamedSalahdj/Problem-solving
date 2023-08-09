@@ -11,3 +11,13 @@ The array will never be empty.
 def get_average(marks):
     return int(sum(marks) / len(marks))
 
+#second-solution
+def get_average(marks):
+    sum = 0
+    number_of_marks = 0
+    i = 0
+    while i < len(marks):
+        sum+=marks[i]
+        number_of_marks+=1
+        i+=1
+    return int(sum / number_of_marks)
