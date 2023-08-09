@@ -14,3 +14,8 @@ def fake_bin(x):
         else:string_without_any_number_graeter_or_lower_than5+='1'
     return string_without_any_number_graeter_or_lower_than5
             
+
+#second-solution with list-comprehesion
+def fake_bin(x):
+    l = ['0' if i < '5' else '1' for i in x ]
+    return ''.join(l)
