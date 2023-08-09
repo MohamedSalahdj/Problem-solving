@@ -11,7 +11,7 @@ The array will never be empty.
 def get_average(marks):
     return int(sum(marks) / len(marks))
 
-#second-solution
+#second-solution --> without built-in function
 def get_average(marks):
     sum = 0
     number_of_marks = 0
@@ -20,4 +20,4 @@ def get_average(marks):
         sum+=marks[i]
         number_of_marks+=1
         i+=1
-    return int(sum / number_of_marks)
+    return sum // number_of_marks
