@@ -9,6 +9,6 @@ Examples (Input ==> Output):
 
 # first-solution with built-in-function
 def string_to_array(s):
-    return s.split() if len(s) > 0  else [""]
+    return s.split(" ") 
 
 
