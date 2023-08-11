@@ -23,3 +23,7 @@ def dna_to_rna(dna):
         else:
             rna+=letter
     return rna
+
+#second-solution by using built-in function (replace())
+def dna_to_rna(dna):
+    return dna.replace('T','U')
