@@ -11,6 +11,16 @@ Same goes for all the other arrays/lists that you will get in the tests: you hav
 Simples!
 """
 
+#first-solution
 def fix_the_meerkat(arr):
     new_arr = arr[::-1]
     return  new_arr
+
+
+#second-solution
+def fix_the_meerkat(arr):
+    index_from_left = len(arr)-1
+    temp = arr[0]
+    arr[0] = arr[index_from_left]
+    arr[index_from_left] = temp
+    return arr
