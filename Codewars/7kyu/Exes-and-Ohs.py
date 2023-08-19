@@ -14,11 +14,7 @@ XO("zzoo") => false
 def xo(s):
     count_of_x = 0
     count_of_o = 0
-    if 'x' in s or 'o' in s or 'O' in s or 'X' in s:
-        for letter in s:
-            if letter == 'x' or letter == 'X':count_of_x+=1
-            elif letter == 'o' or letter == 'O':count_of_o+=1
-        return True if count_of_x == count_of_o else False
-    else: 
-        return True
-    
+    for letter in s:
+        if letter == 'x' or letter == 'X':count_of_x+=1
+        elif letter == 'o' or letter == 'O':count_of_o+=1
+    return True if count_of_x == count_of_o else False
