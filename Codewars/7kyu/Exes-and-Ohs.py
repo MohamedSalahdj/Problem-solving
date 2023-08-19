@@ -18,3 +18,8 @@ def xo(s):
         if letter == 'x' or letter == 'X':count_of_x+=1
         elif letter == 'o' or letter == 'O':count_of_o+=1
     return True if count_of_x == count_of_o else False
+
+#second-solution 
+def xo(s):
+    s = s.lower()
+    return s.count('x') == s.count('o')
