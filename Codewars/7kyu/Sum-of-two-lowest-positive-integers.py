@@ -25,7 +25,7 @@ def sum_two_smallest_numbers(numbers):
     
     return two_smallest_numbers[0] + two_smallest_numbers[-1]
     
-#second-solution 
+#second-solution
 def sum_two_smallest_numbers(numbers):
     if numbers[0] < numbers[1]:
         minimum_number_one = numbers[0]
@@ -41,3 +41,7 @@ def sum_two_smallest_numbers(numbers):
             minimum_number_two = numbers[i]
     return minimum_number_one + minimum_number_two
         
+#third-solution
+def sum_two_smallest_numbers(numbers):
+    numbers.sort()
+    return sum(numbers[:2])
