@@ -13,4 +13,9 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 def filter_list(l):
     new_list = [ item for item in l if type(item) != str ]
     return new_list
+
+#second-solution
+def filter_list(l):
+    l = [ item for item in l if isinstance(item,int)]
+    return l
         
