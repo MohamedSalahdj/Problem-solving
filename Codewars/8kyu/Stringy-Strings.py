@@ -19,3 +19,12 @@ def stringy(size):
     for i in range(size):
         string+= '1' if i%2==0 else '0'
     return string
+
+
+
+#second-solution
+def stringy(size):
+    string = ''
+    for i in range(1,size+1):
+        string+= str(i%2)
+    return string
