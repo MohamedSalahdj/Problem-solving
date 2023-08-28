@@ -17,6 +17,5 @@ The size will always be positive and will only use whole numbers.
 def stringy(size):
     string = ''
     for i in range(size):
-        if i%2 == 0: string+='1'
-        else: string+='0'
+        string+= '1' if i%2==0 else '0'
     return string
