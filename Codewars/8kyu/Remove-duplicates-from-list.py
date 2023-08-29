@@ -18,3 +18,9 @@ def distinct(seq):
             arr_without_dulicate.append(item)
             
     return arr_without_dulicate
+
+
+#second-solution 
+def distinct(seq):
+    #uses power of keys it not dublicated
+    return list(dict.fromkeys(seq))
