@@ -15,3 +15,8 @@ This example will return the string Hello, John Smith! Welcome to Phoenix, Arizo
 #first-solution 
 def say_hello(name, city, state):
     return "Hello, " + ' '.join(name) + '! ' + 'Welcome to ' + city + ', ' + state +'!'
+
+
+#second-solution 
+def say_hello(name, city, state):
+    return f'Hello, {" ".join(name)}! Welcome to {city}, {state}!'
