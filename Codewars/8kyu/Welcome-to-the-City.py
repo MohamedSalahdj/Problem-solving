@@ -20,3 +20,13 @@ def say_hello(name, city, state):
 #second-solution 
 def say_hello(name, city, state):
     return f'Hello, {" ".join(name)}! Welcome to {city}, {state}!'
+
+#third_solution
+def say_hello(names, city, state):
+    #extract name from names without built-in function 
+    full_name = '' 
+    for i in range(len(names)-1):
+        full_name+=names[i] + ' '
+    full_name+=names[-1]
+        
+    return f'Hello, {full_name}! Welcome to {city}, {state}!'
