@@ -27,3 +27,7 @@ def add_length(str):
     l.append(word+' '+f'{len(word)}')
     return l
 
+#second-solution
+def add_length(s):
+    l = [ f"{word} {len(word)}" for word in s.split() ]
+    return l
