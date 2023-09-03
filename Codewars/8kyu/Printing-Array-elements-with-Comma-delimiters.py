@@ -18,3 +18,8 @@ def print_array(arr):
         sequance+=str(arr[i]) +','
     sequance+=str(arr[-1])
     return sequance
+
+
+#second-solution 
+def print_array(arr):
+    return ",".join(map(str, arr))
