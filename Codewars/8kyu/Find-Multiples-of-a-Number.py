@@ -11,3 +11,13 @@ the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to
 #first-solution
 def find_multiples(integer, limit):
     return list(range(integer, limit+1,integer))
+
+
+#second-solution
+def find_multiples(integer, limit):
+    l = []
+    i = integer
+    while i <= limit:
+        l.append(i)
+        i+=integer
+    return l
