@@ -90,3 +90,7 @@ def is_opposite(s1,s2):
             i+=1
         return True if len(s1) !=0 else False 
         
+
+#second-solution 
+def is_opposite(s1,s2):
+    return  s1.swapcase() == s2 and s1!=""
