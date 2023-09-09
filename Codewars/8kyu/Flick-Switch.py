@@ -29,3 +29,14 @@ def flick_switch(lst):
             l.append( t)
     return l
             
+
+
+#second-solution
+
+def flick_switch(lst):
+    l , bool = [], True
+    for item in lst:
+        if item == 'flick':
+            bool = not bool
+        l.append(bool)
+    return l
