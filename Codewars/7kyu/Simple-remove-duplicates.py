@@ -24,3 +24,11 @@ def solve(arr):
         else:
             i+=1
     return arr
+
+
+#second-solution
+def solve(arr): 
+    list_without_duplicate = [ arr[i] for i in range(len(arr))  if arr[i] not in arr[i+1:] ]
+    return list_without_duplicate
+
+
