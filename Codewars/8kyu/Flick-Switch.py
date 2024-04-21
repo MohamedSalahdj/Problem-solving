@@ -32,7 +32,6 @@ def flick_switch(lst):
 
 
 #second-solution
-
 def flick_switch(lst):
     l , bool = [], True
     for item in lst:

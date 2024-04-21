@@ -20,8 +20,6 @@ def sum_str(a, b):
         b = 0
     return str(int(a) + int(b))
 
-print(sum_str('', ''))
-
 
 #second solution 
 def sum_str(a, b):

@@ -6,7 +6,6 @@ Note: Only valid inputs will be given.
 """
 
 # First solution 
-
 def boolean_to_string(b):
     return "True" if b == 1 else "False"
 

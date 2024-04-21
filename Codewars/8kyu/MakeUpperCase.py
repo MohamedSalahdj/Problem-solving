@@ -1,9 +1,9 @@
 """
 Write a function which converts the input string to uppercase.
 """
-# First solution 
-def make_upper_case(s):
-    return s.upper()
+s = 'mohamed'
+s_new = s[::-1]
+print(s_new)
 
 # SecondSolution 
 def make_upper_case(s):

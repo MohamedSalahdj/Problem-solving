@@ -9,4 +9,3 @@ For example:
 def maps(a):
     new_double_array = [num+num for num in a]
     return new_double_array
-    

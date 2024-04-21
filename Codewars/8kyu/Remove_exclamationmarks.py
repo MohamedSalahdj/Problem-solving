@@ -12,4 +12,3 @@ def remove_exclamation_marks(s):
 #second solution ---> with replace method 
 def remove_exclamation_marks(s):
     return s.replace('!','')
-

@@ -20,4 +20,8 @@ def sum_array(arr):
         return sum(arr)
     else:
         return 0
-    
+
+#second-solution 
+def sum_array(arr):
+    return 0 if arr == None or len(arr) < 3 else sum(arr) - (max(arr) + min(arr))
+        

@@ -20,3 +20,4 @@ If the initial velocity is non-positive, the return value should be 0
 def sakura_fall(v):
     #distance equal = 400
     return 400 / v if v > 0 else 0
+

@@ -11,4 +11,3 @@ Given a set of numbers, return the additive inverse of each. Each positive becom
 def invert(lst):
     l = [ item*-1 for item in lst]
     return l
-

@@ -12,3 +12,8 @@ multiply(-3) == -15 # -3 * 5¹
 # first-solution
 def multiply(n):
     return n * 5 ** len(str(abs(n)))
+
+
+l = [1, 2, 3]
+
+print(",".join(map(str, l)))
