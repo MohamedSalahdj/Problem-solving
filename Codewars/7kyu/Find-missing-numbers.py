@@ -25,4 +25,3 @@ def find_missing_numbers(arr):
         else:
             list_missing_numbers.append(number)
     return list_missing_numbers
-            
