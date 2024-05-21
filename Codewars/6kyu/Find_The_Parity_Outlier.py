@@ -25,3 +25,14 @@ def find_outlier(integers):
     else:
         for i in num_odd:
             return i
+
+#second_solution
+def find_outlier(integers):
+    even_number = []
+    odd_number = []
+    for number in integers:
+        if number % 2 == 0:
+            even_number.append(number)
+        else:
+            odd_number.append(number)
+    return odd_number[0] if len(odd_number) == 1 else even_number[0]
