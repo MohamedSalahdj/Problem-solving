@@ -29,3 +29,14 @@ def testit(act, s):
     return result
    
 #second_solution 
+def testit(act, s):
+    dict_result = {
+        'run_': '_',
+        'run|': '/',
+        'jump|': '|',
+        'jump_': 'x'
+    }
+    result = ''
+    for i in range(len(act)):
+        result +=dict_result[act[i]+s[i]]
+    return result 
