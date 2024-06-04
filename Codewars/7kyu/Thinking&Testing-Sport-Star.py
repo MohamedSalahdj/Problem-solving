@@ -1,5 +1,5 @@
 ''' 
-            This problem name : Thinking & Testing : Sport Star
+            problem name : Thinking & Testing : Sport Star
 DESCRIPTION:
     No Story
 
