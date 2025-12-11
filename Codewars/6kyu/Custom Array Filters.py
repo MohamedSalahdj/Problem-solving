@@ -20,20 +20,20 @@ Note: List with non-numbers will be tested as well.
 
 class list:
     def __init__(self, array):
-        self.array = array
+        self.array = [item for item in array if isinstance(item, int)]
         
     def even(self):
-        return [x for x in self.array if isinstance(x, int) and x % 2 == 0]
+        return [x for x in self.array if x % 2 == 0]
     
     def odd(self):
-        return [x for x in self.array if isinstance(x, int) and x % 2 == 1]
+        return [x for x in self.array if x % 2 == 1]
     
     def under(self, num):
-        return [x for x in self.array if isinstance(x, int) and x < num]
+        return [x for x in self.array if x < num]
     
     def over(self, num):
-        return [x for x in self.array if isinstance(x, int) and x > num]
+        return [x for x in self.array if x > num]
     
     def in_range(self, low, high):
-        return [x for x in self.array if isinstance(x, int) and x >= low and x <= high]
+        return [x for x in self.array if x >= low and x <= high]
     
